@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Property: Mi Cuenta  </title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/estilos.css">
+
+
+
+</head>
+
+<body>
+
+
+    <!--ICONO DE PERFIL -->
+
+    <header>
+        <h2 class="micuenta"> Mi Cuenta </h2> 
+        
+        
+        <div > <img src="/imagenes/Mi Cuenta Icono.png" alt="IconoMiPerfil" class="perfi" > <br>
+            <h4 class="contra">Numero de Contrato: 425819/9</h4> </div>
+        
+        <br>
+        
+           
+
+    </header> <br>
+
+    <!--############ NAVEGADOR MI CUENTA  ##############--> 
+
+
+    
+      <ul class="nav justify-content-center navegador">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html">Volver a Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pagos"> Pagos y Comprobantes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#ayuda">Ayuda y PreAvisos</a>
+        </li>
+        </ul>
+  
+
+
+     <br><br>
+
+
+
+        <!-- PAGO MEDIANTE TRANFERENCIA  -->
+
+        <img src="/imagenes/card.png" alt="###" class="cardimg"> <hr>
+
+      
+        <h3 class="tarjeta" id="pagos">  Pagar Mendiante Transferencia :  </h3>    
+
+        <p class="abonar"> Ud podra abonar el Alquiler, Expensas y Servicios  a la siguiente cuenta</p> <br>
+
+        <div class="cbu">  <h3> CBU/CVU: 1878659678954413</h3>
+            <h4 class="alias"> ALIAS: POPERTY.PAGOS.SOL</h4>
+            <h4 class="alias"> Beneficiario: Marcos Jimenez Sosa</h4>
+            
+        
+        </div><br>
+        <br>
+        <br><br> 
+        
+        
+        
+       
+        <!-- COMPROBANTES-->
+
+
+       <img src="/imagenes/check.png" alt="imggg" class="cardimg">
+        
+     <div class="comprobante"> <hr> <h3>Cargar Comprobante </h3> 
+      <p>Haz Click a Seleccionar archivo para cargar tu comprobante de pago:</p>
+      <div class="mb-15">
+        <label for="formFile" class="form-label"> </label>
+        <input class="form-control archive" type="file" id="formFile"> <br>
+        
+        <input class ="btn btn-primary" type="submit" value="Enviar" > <br><br>
+      </div> <hr> </div>   
+       
+        <br><br>
+  
+        
+          <br>
+  <!--MENSAJERO AYUDA Y PREAVISOS -->
+  
+
+<div class="Ayuda">
+
+    <img src="/imagenes/mantenimiento.webp" alt="#" class="arreglos">
+    <h3 class="h1-responsive font-weight-bold text-center my-4" id="ayuda">Ayuda y PreAvisos</h3>
+  
+    <p class="text-center w-responsive mx-auto mb-5">Escribi el detalle de tu Inconveniente actual con el inmbuele y nos contactaremos a la brevedad.</p>
+  
+  
+    <div class="row preaviso">
+  
+        
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+  
+               
+                <div class="row">
+  
+                    
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre y Apellido</label>
+                        </div>
+                    </div>
+                    
+  
+                   
+                    <div class="col-md-6">
+                        <div class="md-form mb-0 ">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Tu email</label>
+                        </div>
+                    </div>
+                  
+  
+                </div>
+         
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+  
+                 
+                    <div class="col-md-12">
+  
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Tu Mensaje</label>
+                        </div>
+  
+                    </div>
+                </div>
+        
+  
+            </form>
+  
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+      
+       
+       
+  
+    </div>
+</div>
+  
+
+
+
+<br><br>
+
+<!--######## FOOOTER ################-->
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="img-footer"> <img src="/imagenes/Logo-property.png"> </div>
+            <div class="ubicacion">
+                <h4>Encontranos en:</h4>
+                <p class="ub-footer">Buenos Aires 1273 Planta alta-</p>
+                <p class="ub-footer">B° Los arenales- Buenos Aires, Argentina</p>
+            </div>
+            <div class="Tel-contacto"> <a href="Tel:+54 xxx-xxxxxx"><i class="fa-solid fa-phone"></i>(+54) 11-465387 </a>
+            </div>
+            <div class="redes-sociales"> <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> <a href="#"
+                    class="youtube"><i class="fab fa-youtube"></i></a> <a href="#" class="instagram"><i
+                        class="fab fa-instagram"></i></a> <a href="#" class="google"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

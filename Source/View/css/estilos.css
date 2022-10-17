@@ -1,135 +1,38 @@
-h2{
-     background-color: crimson;
-     text-align: center;
-     padding: 20px;
-     color: white;
-
+header{
+    grid-area: header;
+    background: #e00000;
+    border: 1px solid #000000;
+}
+.navbar-brand img{
+    width: 200px;
+}
+.nav-container{
+    margin-left: 20px;
 }
 
-.perfi{
-    display: inline-flex;
-    margin-left: auto 5px;
-    float: left;
-
-
+.navbar{
+    padding: 20px;
 }
-
-
-
-a { 
-    font-family: Arial, Helvetica, sans-serif;
-
+.nav-principal{
+    display: flex;
 }
-
-
-
-
-header {
+.nav-principal li{
+    list-style: none;
+    transition: all 0.4s;
+    z-index: 12;
+}
+.nav-principal li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
     text-align: center;
-    background: #1c4c96;
-    border-image: stretch;
-    
-     
-}
-
-header h2 {
-    background-color:#E00000;
-    
-}
-
-
-/* NAVEGADOR*/
-
-
-
-.navegador {
-        font-size: 2em;
-        font-family: "open sans " , sans-serif;
-        background-color: rgb(241, 241, 241);
 
 }
 
-
-/* Pagos y Comprobantes*/
-
-
-
-
-.comprobante {
-   text-align:center;
-   background-color:cornsilk;
-
-   font-style: italic;
-   
-   
+.btn-usuarios {
+    background-color: #1C4C96;
 }
-
-
-
-
-
-
-h4{color: #f0f3f5;
-
-
-}
-
-.tarjeta {
-        text-align: center;
-        background-color: beige;
-
-
-        
-
-}
-
-.tarjeta:hover{
-    color: darkolivegreen;
-
-
-
-
-}
-
-.abonar {
-    text-align: center;
-    background-color: beige;
-    
-    
-
-    
-
-
-}
-
-.cbu {
-    
-     text-align: center;
-    border-radius: 50px;
-    border-style: dotted;
-    margin-left: 20%;
-    margin-right: 20%;
-    
-    
-    
-    
-
-   
-}
-
-.alias {
-    color: black;
-
-
-}
-
-.contra {
-    text-align: left;
-}
-
-
-/* FOOTER */
-
 
 .footer-container {
     display: flex;
@@ -156,48 +59,9 @@ h4{color: #f0f3f5;
     grid-area: footer;
     background-color: #e00000;
 }
-
-
-
-
-
-.Ayuda{
-    background-color:rgba( 221, 160 , 221 ,  0.7 )
-    
-   
-    
-
+.form{ 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.preaviso{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-}
-
-.arreglos{
-    
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    
-    
-}
-
-.cardimg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    border-radius: 50%;
-    
-}
-
-
-
-

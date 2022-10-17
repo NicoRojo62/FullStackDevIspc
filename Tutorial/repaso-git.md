@@ -1,4 +1,6 @@
-# Repaso Git
+# Repaso Git Consola
+
+[Mini Tutorial de GitHub Desktop](./git-hub-desktop.md#git-hub-desktop)
 
 Esto un simple repaso para quien pudiera servirle recordar los pasos, a la hora de crear branches en un repositorio remoto:
 

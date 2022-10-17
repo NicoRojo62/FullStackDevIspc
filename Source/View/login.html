@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Formulario de Inicio de Sesión - Modal</h2>
+    <button onclick="document.getElementById('seccion-modal').style.display='block'"style="width:auto;">Inicia sesión</button>
+        <div id="seccion-modal" class="modal">
+            <form class="contenido-modal animate" action="action_page_login.html" method="get">
+                <div class="contenedor-titulo">
+                    <span onclick="document.getElementById('seccion-modal').style.display='none'" class="btn-cerrar" title="Cerrar">&times;</span>
+                    <h3>Iniciar Sesión</h3>
+                </div>
+
+                <div class="contenedor">
+                    <label for="txt-username"><b>Cuit/Cuil *</b></label>
+                    <input type="text" placeholder="Ingresá tu Cuit/Cuil" name="username" id="txt-username" required>
+
+                    <label for="txt-password"><b>Contraseña *</b></label>
+                    <input type="password" placeholder="Ingresá tu Contraseña" name="password" id="txt-password" required>
+
+                    <button type="submit">Ingresar</button>
+                    <label><input type="checkbox" checked="checked" name="remember"> Recordame</label>
+                </div>
+
+                <div class="contenedor" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('seccion-modal').style.display='none'" class="btn-cancelar">Cancelar</button>
+                    <span class="spn-password"><a href="#">¿Olvidaste tu Contraseña?</a></span>
+                </div>
+            </form>
+        </div>
+        <script src="/JS/utils.js"></script>
+</body>
+</html>

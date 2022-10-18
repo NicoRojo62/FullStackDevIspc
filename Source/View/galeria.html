@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+    <link rel="stylesheet" href="../View/CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-transparent d-flex ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../View/IMG/Logo-property.png" alt="Logo-property" >
+                </a>
+            </div>
+        </nav>
+        <div class="nav-principal">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#Empresa">La empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contactos">Contactos</a>
+                </li>
+            
+            </ul>
+        </div>
+    </header>
+    <div class="form">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 busqueda-categoria-col">
+        <div class="busqueda-categoria">
+          <h2 class="item-borde-top subtitle-text">Estoy Buscando</h2>
+          <div class="row align-items-center opciones-busqueda">
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+              <p>Tipo:</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+              <div class="form-group">
+
+                <select name="tipo" class="form-control form-control-sm" onchange="ajax1(this.value)"><option value="0">Todos</option><option value="100" selected="">Casas</option><option value="111">Cocheras</option><option value="102">Departamentos</option><option value="108">Fincas, Campos, Quintas</option><option value="112">Galpones</option><option value="106">Locales, Salones, Oficinas, Consultorios</option><option value="110">Negocios, Industrias</option><option value="113">Parcelas, Nichos</option><option value="104">Terrenos, Lotes</option><option value="109">Transferencias, Carpetas</option></select>                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+              <p>Operación:</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+              <div class="form-group">
+                <div id="lista" style="display:block"> 				   
+                <select name="operacion" class="form-control form-control-sm" onchange="ajax2(this.value)"><option value="0">Todas</option><option value="02">Alquiler</option><option value="01">Alquiler de Temporada</option><option value="03">Venta</option></select> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+              <p>Zona:</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+              <div class="form-group">
+
+                <div id="lista2" style="display:block"> 				  
+                <select name="zona" class="form-control form-control-sm" onchange="ajax3(this.value)"><option value="0">Todas</option><option value="10">25 de Mayo</option><option value="18">9 de Julio</option><option value="01">Albardon</option><option value="11">Angaco</option><option value="12">Calingasta</option><option value="13">Capital</option><option value="14">Caucete</option><option value="15">Chimbas</option><option value="21">Fuera de San Juan</option><option value="16">Iglesia</option><option value="17">Jachal</option><option value="02">Pocito</option><option value="03">Rawson</option><option value="04">Rivadavia</option><option value="05">San Martin</option><option value="06">Santa Lucia</option><option value="07">Sarmiento</option><option value="08">Ullum</option><option value="09">Valle Fertil</option><option value="20">Zonda</option></select>                      </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+              <p>Vendedor:</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+              <div class="form-group">
+                <select name="vendedor" id="vendedor" class="form-control form-control-sm">
+                  <option value="Todos">Todos</option>
+                  <option value="No Tienda">Particular</option>
+                  <option value="Tienda">Inmobiliaria</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="label_dormitorios" class="col-lg-4 col-md-4 col-sm-4 col-4" style="display:block">
+              <p>Dormitorios:</p>
+            </div>
+
+            <div id="lista3" class="col-lg-8 col-md-8 col-sm-8 col-8" style="display:block"> 
+              <div class="form-group">
+                  <select name="dormitorios" id="dormitorios" class="form-control form-control-sm">
+                    <option value="Todos">Todos</option>
+                    <option value="Monoambiente">Monoambiente</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="mas4">Mas de 4</option>
+                  </select>
+              </div>
+            </div>
+
+            <div id="label_barrio_privado" class="col-lg-4 col-md-4 col-sm-4 col-4" style="display:block">
+               <p>Barrio Privado:</p>
+            </div>
+            <div id="lista_bp" style="display:block" class="col-lg-8 col-md-8 col-sm-8 col-8">
+              <div class="form-group">
+                  <select name="barrioprivado" id="barrioprivado" class="form-control form-control-sm">
+                    <option>Todos</option>
+                    <option>Si</option>
+                    <option>No</option>
+                  </select>
+              </div>  
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+              <p>Apto Crédito:</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+              <div class="form-group">
+                <select name="aptocredito" id="aptocredito" class="form-control form-control-sm">
+                  <option>Todos</option>
+                  <option>Si</option>
+                  <option>No</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+              <p>Precio Desde:</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+              <div class="form-group">
+                <input type="number" name="precio_desde" class="form-control form-control-sm" id="formGroupExampleInput" placeholder="Precio">
+              </div>
+            </div>    
+            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+              <p>Precio Hasta:</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+              <div class="form-group">
+                <input type="number" name="precio_hasta" class="form-control form-control-sm" id="formGroupExampleInput" placeholder="Precio">
+              </div>
+            </div> 
+            
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 radio-options">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="resultado" id="radio1" value="listado" checked="">
+                  <label class="form-check-label" for="exampleRadios1">
+                    A Listado
+                  </label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 radio-options">                      
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="resultado" id="radio2" value="googlemaps">
+                  <label class="form-check-label" for="exampleRadios2">
+                    A Mapa
+                  </label>
+                </div>
+            </div>
+            <input name="orden" type="hidden" id="orden" value="9">
+            <button class="btn btn-primary col-lg-11 col-md-11 col-sm-11 col-11 mx-auto mt-2 mb-1" onclick="valida_envia();return false">Buscar</button>
+          </div>
+          
+        </div>
+        </div>
+    </div>
+
+    <!--Division-->
+    <div class="row">
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="../View/IMG/Deptonew.jpeg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Oroño 2642</a></h5>
+              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+  
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="../View/IMG/departamentos-2.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Balcarce 120</a></h5>
+              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+                <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+  
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="../View/IMG/deptonew1.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Catamarca 3000</a></h5>
+              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+  
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="../View/IMG/departamentos-4.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">San Lorenzo 500</a></h5>
+              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+  
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="../View/IMG/departamento-5.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">San Luis 900</a></h5>
+              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+                <div class="badge badge-primary px-3 rounded-pill font-weight-normal">New</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+  
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="../View/IMG/Departamento-6.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Cafferata 750</a></h5>
+              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+  
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="../View/IMG/deptonew2.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Colon 320</a></h5>
+              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                <div class="badge badge-info px-3 rounded-pill font-weight-normal">Hot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+  
+        <!-- End -->
+  
+      </div>
+      <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Buscar Más</a></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="img-footer"> <img src="../View/IMG/Logo-property.png"> </div>
+        <div class="ubicacion">
+            <h4>Encontranos en:</h4>
+            <p class="ub-footer">Buenos Aires 1273 Planta alta-</p>
+            <p class="ub-footer">B° Los arenales- Buenos Aires, Argentina</p>
+        </div>
+        <div class="Tel-contacto"> <a href="Tel:+54 xxx-xxxxxx"><i class="fa-solid fa-phone"></i>(+54) 11-465387 </a>
+        </div>
+        <div class="redes-sociales"> <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> <a href="#"
+                class="youtube"><i class="fab fa-youtube"></i></a> <a href="#" class="instagram"><i
+                    class="fab fa-instagram"></i></a> <a href="#" class="google"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

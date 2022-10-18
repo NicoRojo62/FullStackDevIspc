@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/signup.css">
+</head>
+<body>
+    <h2>Formulario de registro - Modal</h2>
+
+    <button onclick="document.getElementById('seccion-modal').style.display='block'" style="width:auto;">Registrarse</button>
+
+    <div id="seccion-modal" class="modal">
+        <span onclick="document.getElementById('seccion-modal').style.display='none'" class="btn-cerrar" title="Cerrar">&times;</span>
+        <form class="contenido-modal" action="action_page_signup.html" method="get">
+            <div class="contenedor">
+                <h1>Registrarse</h1>
+                <p>Por favor complete este formulario para crear una cuenta.</p>
+                <hr> <!--Draws a line-->
+                <label for="txt-email"><b>E-mail*</b></label>
+                <input type="text" placeholder="Ingresar tu direccion de E-mail" name="email" id="txt-email" required>
+
+                <label for="txt-password"><b>Contraseña*</b></label>
+                <input type="password" placeholder="Ingresa tu contraseña" name="password" id="txt-password" required>
+
+                <label for="txt-password-repeat"><b>Confirma tu contraseña*</b></label>
+                <input type="password" placeholder="Ingresa nuevamente tu contraseña" name="passwordrepeat" id="txt-password-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;">Recordarme
+                </label>
+                
+                <p>Al registrarte estas aceptando
+                    <a href="#" style="color:dodgeblue">terminos y condiciones</a>.
+                </p>
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('seccion-modal').style.display='none'" class="btn-cancelar">Cancelar</button>
+                    <button type="submit" class="btn-registrarse">Confirmar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

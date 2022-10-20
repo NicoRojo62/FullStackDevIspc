@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Property Administracion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../View/CSS/HOJADEESTILOSADMIN.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="estilo.css" />
+  <link rel="../View/CSS/HOJADEESTILOSADMIN.css" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+     <H2>ADMINISTRADOR</H2>
+
+
+     <div > <img src="../View/IMG/admin image.png" alt="IconoMiPerfil" class="perfi" >
+      <p class="admin">Admin: MarcosJimen299</p>
+
+
+     <br>
+
+  
+    
+      <ul class="nav justify-content-center navegador">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Volver a Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Clientes">Clientes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#Mensajes">Mensajes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#Publicar">Publicar</a>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#Configuracion/editar">Configuracion/editar</a>
+        </li>
+
+        </ul>
+  
+
+
+     <br><br>
+
+
+
+
+
+
+
+
+  </header>
+
+
+  <!-- Clientes GESTOR DE USUARIO -->
+
+  <h3>Clientes </h3>
+  <h3 class="Clientes" id="Clientes"> </h3>
+
+    <hr>
+<div class="container bootstrap snippets bootdey">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="main-box no-header clearfix">
+                <div class="main-box-body clearfix">
+                    <div class="table-responsive">
+                        <table class="table user-list">
+                            <thead>
+                                <tr>
+                                <th><span>Usuario</span></th>
+                                <th><span>Creado</span></th>
+                                <th class="text-center"><span>Estado</span></th>
+                                <th><span>Email</span></th>
+                                <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="https://bootdey.com/img/Content/user_1.jpg" alt="">
+                                        <a href="#" class="user-link">Nicolas Romero</a>
+                                        <span class="user-subhead">Member</span>
+                                    </td>
+                                    <td>2013/08/12</td>
+                                    <td class="text-center">
+                                        <span class="label label-default">Pendiente</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">Nicoromer11o@gmail.com</a>
+                                    </td>
+                                    <td style="width: 20%;">
+                                        <a href="#" class="table-link text-warning">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link text-info">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link danger">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="https://bootdey.com/img/Content/user_3.jpg" alt="">
+                                        <a href="#" class="user-link">MarcosJimen299</a>
+                                        <span class="user-subhead">Admin</span>
+                                    </td>
+                                    <td>2013/08/12</td>
+                                    <td class="text-center">
+                                        <span class="label label-success">Activo</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">MarcosJimen299@gmail.com</a>
+                                    </td>
+                                    <td style="width: 20%;">
+                                        <a href="#" class="table-link  text-warning">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link  text-info">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link danger">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="https://bootdey.com/img/Content/user_2.jpg" alt="">
+                                        <a href="#" class="user-link">Adriela Ponce</a>
+                                        <span class="user-subhead">Member</span>
+                                    </td>
+                                    <td>2013/08/12</td>
+                                    <td class="text-center">
+                                        <span class="label label-danger">Inactivo</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">aponce3213@gmail.com</a>
+                                    </td>
+                                    <td style="width: 20%;">
+                                        <a href="#" class="table-link  text-warning">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link  text-info">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link danger">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- MENSAJES/ INBOX -->
+
+
+  <h3>Mensajes
+  </h3>      
+
+  <h3 class="Mensajes" id="Mensajes"> </h3>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body bg-primary text-white mailbox-widget pb-0">
+                    <h2 class="text-white pb-3">Tus correos</h2>
+                    <ul class="nav nav-tabs custom-tab border-bottom-0 mt-4" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="inbox-tab" data-toggle="tab" aria-controls="inbox" href="#inbox" role="tab" aria-selected="true">
+                                <span class="d-block d-md-none"><i class="ti-email"></i></span>
+                                <span class="d-none d-md-block"> Recibidos</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="sent-tab" data-toggle="tab" aria-controls="sent" href="#sent" role="tab" aria-selected="false">
+                                <span class="d-block d-md-none"><i class="ti-export"></i></span>
+                                <span class="d-none d-md-block">Enviados</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="spam-tab" data-toggle="tab" aria-controls="spam" href="#spam" role="tab" aria-selected="false">
+                                <span class="d-block d-md-none"><i class="ti-panel"></i></span>
+                                <span class="d-none d-md-block">Spam</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="delete-tab" data-toggle="tab" aria-controls="delete" href="#delete" role="tab" aria-selected="false">
+                                <span class="d-block d-md-none"><i class="ti-trash"></i></span>
+                                <span class="d-none d-md-block">Eliminados</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="inbox" aria-labelledby="inbox-tab" role="tabpanel">
+                        <div>
+                            <div class="row p-4 no-gutters align-items-center">
+                                <div class="col-sm-12 col-md-6">
+                                    <h3 class="font-light mb-0"><i class="ti-email mr-2"></i>350 mensajes sin leer</h3>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <ul class="list-inline dl mb-0 float-left float-md-right">
+                                        <li class="list-inline-item text-info mr-3">
+                                            <a href="#">
+                                                <button class="btn btn-circle btn-success text-white" href="javascript:void(0)">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                                <span class="ml-2 font-normal text-dark">Compose</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item text-danger">
+                                            <a href="#">
+                                                <button class="btn btn-circle btn-danger text-white" href="javascript:void(0)">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                                <span class="ml-2 font-normal text-dark">Delete</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Mail list-->
+                            <div class="table-responsive">
+                                <table class="table email-table no-wrap table-hover v-middle mb-0 font-14">
+                                    <tbody>
+                                        <!-- row -->
+                                        <tr>
+                                            <!-- label -->
+                                            <td class="pl-3">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="cst1" />
+                                                    <label class="custom-control-label" for="cst1">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <!-- star -->
+                                            <td><i class="fa fa-star text-warning"></i></td>
+                                            <td>
+                                                <span class="mb-0 text-muted">Rosa Gomez</span>
+                                            </td>
+                                            <!-- Message -->
+                                            <td>
+                                                <a class="link" href="javascript: void(0)">
+                                                    <span class="badge badge-pill text-white font-medium badge-danger mr-2">Work</span>
+                                                    <span class="text-dark">Problema de cañeria-</span>
+                                                </a>
+                                            </td>
+                                            <!-- Attachment -->
+                                            <td><i class="fa fa-paperclip text-muted"></i></td>
+                                            <!-- Time -->
+                                            <td class="text-muted">May 13</td>
+                                        </tr>
+                                        <!-- row -->
+                                        <tr>
+                                            <!-- label -->
+                                            <td class="pl-3">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="cst2" />
+                                                    <label class="custom-control-label" for="cst2">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <!-- star -->
+                                            <td><i class="fa fa-star"></i></td>
+                                            <!-- User -->
+                                            <td>
+                                                <span class="mb-0 text-muted">Nicolas Romero</span>
+                                            </td>
+                                            <!-- Message -->
+                                            <td>
+                                                <a class="link" href="javascript: void(0)">
+                                                    <span class="badge badge-pill text-white font-medium badge-info mr-2">Business</span>
+                                                    <span class="text-dark">Baño inundado </span>
+                                                </a>
+                                            </td>
+                                            <!-- Attachment -->
+                                            <td><i class="fa fa-paperclip text-muted"></i></td>
+                                            <!-- Time -->
+                                            <td class="text-muted">May 13</td>
+                                        </tr>
+                                        <!-- row -->
+                                        <tr>
+                                            <!-- label -->
+                                            <td class="pl-3">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="cst3" />
+                                                    <label class="custom-control-label" for="cst3">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <!-- star -->
+                                            <td><i class="fa fa-star text-warning"></i></td>
+                                            <!-- User -->
+                                            <td class="user-name max-texts">
+                                                <span class="mb-0 text-muted font-light">Marcelo Rojas</span>
+                                            </td>
+                                            <!-- Message -->
+                                            <td>
+                                                <a class="link" href="javascript: void(0)">
+                                                    <span class="badge badge-pill text-white font-medium badge-warning mr-2">Friend</span>
+                                                    <span class="font-light text-dark">Valor de las expensas</span>
+                                                </a>
+                                            </td>
+                                            <!-- Attachment -->
+                                            <td><i class="fa fa-paperclip text-muted"></i></td>
+                                            <!-- Time -->
+                                            <td class="text-muted font-light">May 13</td>
+                                        </tr>
+                                        <!-- row -->
+                                        <tr class="">
+                                            <!-- label -->
+                                            <td class="pl-3">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="cst4" />
+                                                    <label class="custom-control-label" for="cst4">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <!-- star -->
+                                            <td><i class="fa fa-star"></i></td>
+                                            <!-- User -->
+                                            <td>
+                                                <span class="mb-0 text-muted font-light">Adriela Ponce</span>
+                                            </td>
+                                            <!-- Message -->
+                                            <td>
+                                                <a class="link" href="javascript: void(0)">
+                                                    <span class="badge badge-pill text-white font-medium badge-info mr-2">Work</span><span class="font-light text-dark"> Cocina con goteras</span>
+                                                </a>
+                                            </td>
+                                            <!-- Attachment -->
+                                            <td><i class="fa fa-paperclip text-muted"></i></td>
+                                            <!-- Time -->
+                                            <td class="text-muted font-light">May 9</td>
+                                        </tr>
+                                        <!-- row -->
+                                        <tr class="">
+                                            <!-- label -->
+                                            <td class="pl-3">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="cst5" />
+                                                    <label class="custom-control-label" for="cst5">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <!-- star -->
+                                            <td><i class="fa fa-star"></i></td>
+                                            <!-- User -->
+                                            <td>
+                                                <span class="mb-0 text-muted font-light">Santiago Acevedo</span>
+                                            </td>
+                                            <!-- Message -->
+                                            <td>
+                                                <a class="link" href="javascript: void(0)">
+                                                    <span class="badge badge-pill text-white font-medium badge-success mr-2">Work</span> <span class="font-light text-dark">Multa por musica alta</span>
+                                                </a>
+                                            </td>
+                                            <!-- Attachment -->
+                                            <td><i class="fa fa-paperclip text-muted"></i></td>
+                                            <!-- Time -->
+                                            <td class="text-muted font-light">Mar 10</td>
+                                        </tr>
+                                        <!-- row -->
+                                        <tr class="">
+                                            <!-- label -->
+                                            <td class="pl-3">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="cst6" />
+                                                    <label class="custom-control-label" for="cst6">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <!-- star -->
+                                            <td><i class="fa fa-star text-warning"></i></td>
+                                            <!-- User -->
+                                            <td>
+                                                <span class="mb-0 text-muted font-light">Malena Dominguez</span>
+                                            </td>
+                                            <!-- Message -->
+                                            <td>
+                                                <a class="link" href="javascript: void(0)">
+                                                    <span class="badge badge-pill text-white font-medium badge-success mr-2">Work</span> <span class="font-light text-dark">Comprobante pago</span>
+                                                </a>
+                                            </td>
+                                            <!-- Attachment -->
+                                            <td><i class="fa fa-paperclip text-muted"></i></td>
+                                            <!-- Time -->
+                                            <td class="text-muted font-light">Mar 09</td>
+                                        </tr>
+                                        <!-- row -->
+                                        <tr class="">
+                                            <!-- label -->
+                                            <td class="pl-3">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="cst7" />
+                                                    <label class="custom-control-label" for="cst7">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <!-- star -->
+                                            <td><i class="fa fa-star text-warning"></i></td>
+                                            <!-- User -->
+                                            <td>
+                                                <span class="mb-0 text-muted font-light"> Florencia Rodriguez</span>
+                                            </td>
+                                            <!-- Message -->
+                                            <td>
+                                                <a class="link" href="javascript: void(0)">
+                                                    <span class="badge badge-pill text-white font-medium badge-danger mr-2">Work</span><span class="font-light text-dark"> Problema electrico</span>
+                                                </a>
+                                            </td>
+                                            <!-- Attachment -->
+                                            <td><i class="fa fa-paperclip text-muted"></i></td>
+                                            <!-- Time -->
+                                            <td class="text-muted font-light">Mar 09</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="sent" aria-labelledby="sent-tab" role="tabpanel">
+                        <div class="row p-3 text-dark">
+                            <div class="col-md-6">
+                                <h3 class="font-light">Lets check profile</h3>
+                                <h4 class="font-light">you can use it with the small code</h4>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="spam" aria-labelledby="spam-tab" role="tabpanel">
+                        <div class="row p-3 text-dark">
+                            <div class="col-md-6">
+                                <h3 class="font-light">Come on you have a lot message</h3>
+                                <h4 class="font-light">you can use it with the small code</h4>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="delete" aria-labelledby="delete-tab" role="tabpanel">
+                        <div class="row p-3 text-dark">
+                            <div class="col-md-6">
+                                <h3 class="font-light">Just do Settings</h3>
+                                <h4 class="font-light">you can use it with the small code</h4>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Boton Publicar -->
+
+  
+
+
+<h3>Publicar</h3>
+
+<h3 class="Publicar" id="Publicar"> </h3>>
+
+<div class="container mt-3">
+
+  <input type="text" class="form-control mt-3" placeholder="ID Propiedad">
+  <input type="text" class="form-control mt-3" placeholder="Tipo de Propiedad">
+  <input type="text" class="form-control mt-3" placeholder="Tasacion">
+  <input type="text" class="form-control mt-3" placeholder="Precio de venta">
+  <input type="text" class="form-control mt-3" placeholder="Precio alquiler">
+  <input type="text" class="form-control mt-3" placeholder="Ubicacion">
+  <input type="text" class="form-control mt-3" placeholder="Antiguedad">
+  <input type="text" class="form-control mt-3" placeholder="Superficie">
+  <input type="text" class="form-control mt-3" placeholder="Ambientes">
+  <input type="text" class="form-control mt-3" placeholder="Estado de Propiedad">
+
+  <button type="button" class="btn btn-primary">Publicar</button>
+
+
+</div>
+
+
+
+
+
+<!-- Boton configuracion editar -->
+
+
+
+<h3>Configuracion/editar</h3>
+<div class="config" id="config"
+>
+<h3 class="Configuracion/editar" id="Configuracion/editar">
+
+</h3>
+
+<div class="container mt-3">
+
+  <input type="text" class="form-control mt-3" placeholder="Check">
+  <input type="text" class="form-control mt-3" placeholder="Celular">
+  <input type="text" class="form-control mt-3" placeholder="Telefono">
+  <input type="text" class="form-control mt-3" placeholder="DNI">
+  <input type="text" class="form-control mt-3" placeholder="Condicion Fiscal">
+  <input type="text" class="form-control mt-3" placeholder="Razon social">
+  <input type="text" class="form-control mt-3" placeholder="Tipo">
+  <input type="text" class="form-control mt-3" placeholder="Nombre">
+  <input type="text" class="form-control mt-3" placeholder="Password">
+  <input type="text" class="form-control mt-3" placeholder="Email">
+
+  <button type="button" class="btn btn-primary">Perfil Admin</button>
+
+
+</div>
+
+
+<!-- Footer, barra de navegacion -->
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="img-footer"> <img src="../View/IMG/Logo-property.png"> </div>
+      <div class="ubicacion">
+         
+          <p class="ub-footer">Property inmobiliaria</p>
+          <p class="ub-footer">B° Los arenales- Buenos Aires, Argentina</p>
+      </div>
+     
+      <div class="redes-sociales"> <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> <a href="#"
+              class="youtube"><i class="fab fa-youtube"></i></a> <a href="#" class="instagram"><i
+                  class="fab fa-instagram"></i></a> <a href="#" class="google"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <ul class="nav justify-content-center navegador">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Volver a Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Clientes">Clientes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#Mensajes">Mensajes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#Publicar">Publicar</a>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#Configuracion/editar">Configuracion/editar</a>
+        </li>
+
+        </ul>
+  
+
+
+     <br><br>
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

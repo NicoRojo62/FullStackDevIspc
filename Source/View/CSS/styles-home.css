@@ -51,14 +51,13 @@
     text-align: center;
 }
 .btn-filtros{
-    padding: 20px;
     display: inline-block;
-    background-color: #ffffff;
+    background-color: #1C4C96;
     margin: 5px;
 }
 
 .btn-filtros a{
-    color: #1C4C96;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;

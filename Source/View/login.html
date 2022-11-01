@@ -4,36 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../View/IMG/Logo-property.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../View/CSS/login.css">
-    <title>Login</title>
+    <title>Inicio de Sesión</title>
 </head>
 <body>
-    <h2>Formulario de Inicio de Sesión - Modal</h2>
-    <button onclick="document.getElementById('seccion-modal').style.display='block'"style="width:auto;">Inicia sesión</button>
-        <div id="seccion-modal" class="modal">
-            <form class="contenido-modal animate" action="user.html" method="get">
-                <div class="contenedor-titulo">
-                    <span onclick="document.getElementById('seccion-modal').style.display='none'" class="btn-cerrar" title="Cerrar">&times;</span>
-                    <h3>Iniciar Sesión</h3>
-                </div>
+    <main class="container">
+        <h1 class="text-center">Iniciar Sesión</h1>
+        <form class="justify-content-center needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Dirección de E-mail</label>
+                <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" required>
+                <div class="invalid-feedback"></div>
+                <div id="emailHelp" class="form-text">Nunca compartiremos tus datos con nadie.</div>
+                <div class="invalid-feedback">Debes ingresar un e-mail con formato válido</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="input-password" minlength="5" required>
+            </div>
+            <div class="mb-5 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recordar Contraseña</label>
+            </div>
+            <div class="container text-center">
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+        </form>
+        <div id="envio-exito" class="ocultar">Bienvenido de nuevo <strong id="email-usuario"></strong>! En instantes serás redirigido a tu perfil...</div>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <Script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+        'use strict'
 
-                <div class="contenedor">
-                    <label for="txt-username"><b>Cuit/Cuil *</b></label>
-                    <input type="text" placeholder="Ingresá tu Cuit/Cuil" name="username" id="txt-username" required>
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
 
-                    <label for="txt-password"><b>Contraseña *</b></label>
-                    <input type="password" placeholder="Ingresá tu Contraseña" name="password" id="txt-password" required>
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
 
-                    <button type="submit">Ingresar</button>
-                    <label><input type="checkbox" checked="checked" name="remember"> Recordame</label>
-                </div>
+            form.classList.add('was-validated')
+            
+            event.preventDefault()
+            event.stopPropagation()
+            
+            if(form.checkValidity()){
+            enviarForm();
+            }
 
-                <div class="contenedor" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('seccion-modal').style.display='none'" class="btn-cancelar">Cancelar</button>
-                    <span class="spn-password"><a href="#">¿Olvidaste tu Contraseña?</a></span>
-                </div>
-            </form>
-        </div>
-        <script src="/JS/utils.js"></script>
+            }, false)
+        })
+        })()
+    </Script>
+    <script>
+        function enviarForm(){
+            const $formulario = document.querySelector('form');
+            const $envioExito = document.querySelector('#envio-exito');
+            const $titulo = document.querySelector('h1');
+            const $bienvenidaUsuario = document.querySelector('#email-usuario');
+            const $emailUsuario = document.querySelector('#input-email').value;
+
+            $formulario.classList = "ocultar";
+            $envioExito.className = "";
+            $titulo.textContent = "Iniciando Sesión...";
+            $bienvenidaUsuario.textContent = $emailUsuario;
+
+            setTimeout(redirecionarUsuario, 3000);
+        }; 
+
+        function redirecionarUsuario() {
+            window.location.href = 'user.html'
+        }
+    </script>
 </body>
 </html>

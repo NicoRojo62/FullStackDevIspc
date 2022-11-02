@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 </head>
 
-<body class="grid-container">
+<body class="container-fluid">
 
     <!--header-->
 
@@ -62,7 +62,8 @@
     </nav>
 
     <!--aside-->
-    <aside class="sidebar d-flex flex-column justify-content-center">
+    <div class="container-fluid row">
+    <aside class="sidebar d-flex flex-column justify-content-center col-sm-5 my-auto">
         <h3 class="text_aside">Encuentra tu propiedad</h3>
 
         <select class="form-select form-select-sm" aria-label="Ejemplo de .form-select-sm">
@@ -120,11 +121,10 @@
         </select>
         <button class="btn-filtros" onclick="window.location.href='galeria.html'"><a class="nav-link active">Buscar</a></button>
     </aside>
+    
+    <!--carrusel de destacadas-->
 
-    <!--main-->
-
-    <article class="main" id="home">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide col-sm-6 my-auto" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../View/IMG/slider-1.png" class="d-block w-100" alt="...">
@@ -137,9 +137,11 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--carrusel de destacadas-->
+    <!--main-->
 
+    <article class="main container" id="home">        
         <div class="text-dest">
             <h1>PROPIEDADES DESTACADAS</h1>
         </div>
@@ -311,7 +313,7 @@
 
 
 
-    <footer class="footer">
+    <footer class="footer container">
         <div class="footer-container">
             <div class="img-footer">
                 <img src="../View/IMG/Logo-property.png">

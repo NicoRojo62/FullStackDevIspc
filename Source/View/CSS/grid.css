@@ -56,6 +56,10 @@ html {
     background-color: #e00000;
 }
 
+#carouselExampleDark{
+    width:35%
+}
+
 /*responsive para tablets*/
 @media (max-width: 600px) {
    .grid-container{

@@ -1,120 +1,29 @@
-body {
-    font-family:'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-/* Campos de entrada con ancho completo*/
-input[type=text],input[type=password] {
-    width:100%;
-    padding:12px 20px;
-    margin:8px 0;
-    display: inline-block;
-    border:1px solid #ccc;
-    box-sizing: border-box;
-}
-/* Establecer un estilo para todos los botones*/
 button {
-    background-color:#04AA6D;
     color:white;
-    padding: 14px 20px;
-    margin:8px 0;
     border:none;
     cursor:pointer;
-    width:100%;
+    width:30%;
+    padding-top: 3rem;
 }
+
 button:hover {
     opacity:0.8;
 }
-/* Estilos adicionales para el boton cancelar*/
-.btn-cancelar {
-    width:auto;
-    padding:10px 18px;
-    background-color:#f44336;
+
+form {
+    padding-top: 5rem;
 }
-/* Centrar el titulo y colocar el boton de cerrar*/
-.contenedor-titulo {
+
+h1 {
+    padding-top: 3rem;
+}
+
+#envio-exito{
     text-align: center;
-    margin:24px 0 12px 0;
-    position:relative;
+    padding-top: 5rem;
 }
-.contenedor {
-    padding:16px;
+
+.ocultar {
+    display: none;  
 }
-span.spn-password {
-    float:right;
-    padding-top:16px;
-}
-/* El Modal (Fondo)*/
-.modal {
-    /* Oculto por defecto*/
-    display: none;
-    /* Permanezca en su lugar*/
-    position:fixed;
-    /* Superponemos en la parte superior*/
-    z-index:1;
-    left:0;
-    top:0;
-    /* Ancho Completo*/
-    width:100%;
-    /* ALtura Completa*/
-    height: 100%;
-    /* Habilite el desplazamiento si es necesario*/
-    overflow:auto;
-    /* Color de fondo alternativo*/
-    background-color:rgb(0,0,0);
-    /* Color de fondo negro con opacidad*/
-    background-color: rgba(0,0,0,0.4);
-    padding-top:60px;
-}
-/* Contenedor modal/caja*/
-.contenido-modal {
-    background-color:#fefefe;
-    /* 5% desde arriba, 15% desde abajo y cerrado*/
-    margin:5% auto 15% auto;
-    border:1px solid #888;
-    /* Podria ser mas o menos, dependiendo del tamaño de la pantalla*/
-    width: 80%;
-}
-/* Boton cerrar (x)*/
-.btn-cerrar {
-    position:absolute;
-    right: 25px;
-    top:0;
-    color:#000;
-    font-size:35px;
-    font-weight: bold;
-}
-.btn-cerrar:hover,
-.btn-cerrar:focus {
-    color:red;
-    cursor:pointer;
-}
-/* Agregar animacion de zoom*/
-.animate{
-    -webkit-animation: animatezoom 0.6s;
-    animation:animatezoom 0.6s;
-}
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0);
-    }
-    to {
-        -webkit-transform: scale(1);
-    }
-}
-@keyframes animatezoom {
-    from {
-        transform:scale(0);
-    }
-    to {
-        transform:scale(1);
-    }
-}
-/* Cambia los estilos para span y el boton de cancelar en pantallas extra pequeñas*/
-@media screen and (max-width:300px){
-    span.spn-password {
-        display:block;
-        float:none;
-    }
-    .btn-cancelar {
-        width:100%;
-    }
-}
+

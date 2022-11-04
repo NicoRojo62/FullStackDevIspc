@@ -1,0 +1,29 @@
+button {
+    color:white;
+    border:none;
+    cursor:pointer;
+    width:30%;
+    padding-top: 3rem;
+}
+
+button:hover {
+    opacity:0.8;
+}
+
+form {
+    padding-top: 5rem;
+}
+
+h1 {
+    padding-top: 3rem;
+}
+
+#envio-exito{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.ocultar {
+    display: none;  
+}
+

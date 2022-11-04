@@ -20,8 +20,8 @@ html {
         "main" auto
         "sidebar" 100px
         "footer" 100px;
-}
 
+}
 .header {
     grid-area: header;
     background: #e00000;
@@ -56,8 +56,12 @@ html {
     background-color: #e00000;
 }
 
+#carouselExampleDark{
+    width:35%
+}
+
 /*responsive para tablets*/
-@media (min-width: 600px) {
+@media (max-width: 600px) {
    .grid-container{
         /*grid-template-columns: 200px auto;
         grid-template-rows: 100px 50px auto 100px;*/
@@ -68,6 +72,10 @@ html {
         "footer footer" 100px /
         200px    auto;
    }
+   .col-md-4 img{
+    width: 50%;
+   }
+
 }
 
 @media (min-width: 900px) {
@@ -80,3 +88,4 @@ html {
         400px    auto   200px;
     }
 }
+

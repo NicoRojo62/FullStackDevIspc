@@ -131,4 +131,30 @@ CREATE TABLE IF NOT EXISTS db_admin_bienes_raices.Comprobante_Pago
   
 ALTER TABLE db_admin_bienes_raices.Comprobante_Pago
 	ADD FOREIGN KEY (Nro_operación) REFERENCES Operación(Nro_operación),
-    ADD FOREIGN KEY (ID_cliente) REFERENCES cliente(ID_cliente)
+    ADD FOREIGN KEY (ID_cliente) REFERENCES cliente(ID_cliente);
+    
+/* Agrega Sentencia INSERT para probar base de datos */
+
+INSERT INTO Cliente (ID_Cliente, E_mail, Tipo_Cliente, Fecha_alta, NyA, DNI, Telefono, Domicilio) 
+	VALUES 
+    (1, "prueba@hotmail.com", "Inquilino", DATE("2022-11-03"),"Locomotora Castro", 45586752, 485962355, "los sauces");
+    
+/* Agrega nuevo Cliente */
+
+INSERT INTO Cliente (ID_Cliente, E_mail, Tipo_Cliente, Fecha_alta, NyA, DNI, Telefono, Domicilio) 
+	VALUES 
+    (2, "prueba2@hotmail.com", "Inquilino", DATE("2022-10-17"),"Peter Parker", 56234864, 5962510, "nueva york");
+
+/* Agrega Sentencia SELECT para leer registro de inquilinos */
+
+SELECT * FROM db_admin_bienes_raices.cliente WHERE Tipo_cliente LIKE "Inquilino";
+
+/* Agrega sentencia UPDATE*/
+
+UPDATE Cliente
+SET NyA = 'Spiderman'
+WHERE ID_Cliente = 2;
+
+/* Agrega sentencia DELETE para eliminar registro de cliente con ID 1*/
+
+DELETE FROM Cliente WHERE ID_Cliente = 1;

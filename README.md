@@ -8,7 +8,7 @@
 <img src="https://user-images.githubusercontent.com/95236196/200439073-b806cef5-1728-4d87-a816-98d8525380ee.gif" alt="gif de property"/>
 </p>
 
-## Video de Presentación - Proyecto Final - FULL STACK - ISPC - GRUPO 31 PROPERTY
+## Video de Presentación - Proyecto Final - FULL STACK
 
 <h2 align="center">https://www.youtube.com/watch?v=QdlnnreJVLw</h2>
 

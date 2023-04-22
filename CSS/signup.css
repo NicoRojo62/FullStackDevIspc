@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+/* Campos de entrada con ancho completo */
+
+input[type=text],
+input[type=password] {
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    display:inline-block;
+    border:none;
+    background:#f1f1f1;
+}
+/* Agregue color de fondo cuando las entradas tienen foco */
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color:#ddd;
+    outline:none;
+}
+/* establecer un estilo para todos los botons */
+button {
+    background-color:#1c4c96;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    opacity:0.9;
+}
+button:hover {
+    opacity:1;
+}
+.btn-cancelar {
+    padding:14px 20px;
+    background-color: #e00000;
+}
+/* Hace flotar los botones cancelar y registrarse, agrega un ancho igual*/
+.btn-cancelar,
+.btn-registrarse {
+    float:left;
+    width:50%;
+}
+/* Agregar padding a los elementos del contenedor */
+.contenedor {
+    padding:16px;
+}
+/* El Modal (fondo) */
+.modal {
+    /* Oculto por defecto */
+    display:none;
+    /* Permanezca en su lugar*/
+    position:fixed;
+    /* Superponemos el la parte superior*/
+    z-index:1;
+    left:0;
+    top:0;
+    /* Ancho copleto*/
+    width:100%;
+    /* Altura completa*/
+    height:100%;
+    /* Habilite elñ desplazamiento si s necesario */
+    overflow:auto;
+    /* Color de fondo*/
+    background-color: #474e5d;
+    padding-top:50px;
+}
+/* Contedido modal/caja*/
+.contenido-modal {
+    background-color:#fefefe;
+    /* 5% desde arriba, 15% desde abajo y cerrado*/
+    margin:5% auto 15% auto;
+    border:1px solid #888;
+    /* Podria ser mas o menos, dependiendo del tamaño de la pantalla*/
+    width:80%;
+}
+/* Estilo de la regla horizontal*/
+hr {
+    border:1px solid #f1f1f1;
+    margin-bottom:25px;
+}
+/* boton cerrar (x)*/
+.btn-cerrar {
+    position:absolute;
+    right:35px;
+    top:15px;
+    font-size:40px;
+    font-weight: bold;
+    color:#f1f1f1
+}
+.btn-cerrar:hover,
+.btn-cerrar:focus {
+    color:#e00000;
+    cursor:pointer;
+}
+/* Distanciar flotantes*/
+.clearfix::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+/* Cambiar estilos para los botones cancelar y registrarse en pantallas extra pequeñas*/
+@media screen and (max-width:300px) {
+    .btn-cancelar,
+    .btn-registrarse {
+        width:100%;
+    }
+}

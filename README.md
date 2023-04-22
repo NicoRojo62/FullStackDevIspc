@@ -2,7 +2,7 @@
 
 <h1 align="center">Property</h1>
 
-- _Proyecto Descontinuado:_ Si se quisiera deployar el sitio estatio del mismo dirijase el dueño del repositorio a la [rama deploy](https://github.com/NicoRojo62/FullStackDevIspc/tree/deploy) y publiquese en GitHub Pages
+- _Proyecto Descontinuado:_ Si se quisiera deployar el sitio estatico del mismo dirijase el dueño del repositorio a la [rama deploy](https://github.com/NicoRojo62/FullStackDevIspc/tree/deploy) y publiquese en GitHub Pages
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/95236196/200439073-b806cef5-1728-4d87-a816-98d8525380ee.gif" alt="gif de property"/>
